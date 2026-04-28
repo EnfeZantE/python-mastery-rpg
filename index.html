@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Mastery RPG | Level Up Your Code</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f0f13;
+            --text-color: #f8f8f2;
+            --accent: #bd93f9;
+            --neon-green: #50fa7b;
+            --neon-pink: #ff79c6;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Fira Code', monospace;
+            overflow-x: hidden;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 4em;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px var(--accent);
+        }
+        header p {
+            color: #888;
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+        .features {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 30px;
+            border-radius: 10px;
+            border-top: 3px solid var(--accent);
+            flex: 1;
+            min-width: 250px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(189, 147, 249, 0.2);
+        }
+        .card h3 {
+            color: var(--neon-pink);
+        }
+        .play-btn {
+            display: inline-block;
+            background-color: transparent;
+            color: var(--neon-green);
+            font-size: 1.5em;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 15px 40px;
+            border: 2px solid var(--neon-green);
+            border-radius: 5px;
+            text-transform: uppercase;
+            transition: 0.3s;
+            box-shadow: 0 0 15px rgba(80, 250, 123, 0.2);
+        }
+        .play-btn:hover {
+            background-color: var(--neon-green);
+            color: #000;
+            box-shadow: 0 0 30px rgba(80, 250, 123, 0.6);
+        }
+        footer {
+            margin-top: 50px;
+            color: #555;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚔️ PYTHON MASTERY RPG</h1>
+            <p>Stop reading boring tutorials. Defeat Syntax Monsters, climb the Infinite Tower, and become a Code Archmage.</p>
+        </header>
+
+        <div class="features">
+            <div class="card">
+                <div style="font-size: 3em;">💻</div>
+                <h3>Live Code Arena</h3>
+                <p>Write real Python code in the browser to attack monsters. Clear the bugs to level up your skills.</p>
+            </div>
+            <div class="card">
+                <div style="font-size: 3em;">🦆</div>
+                <h3>AI Copilot Duck</h3>
+                <p>Stuck on a problem? Our neural-network-powered rubber duck mentor is always ready to drop a hint.</p>
+            </div>
+            <div class="card">
+                <div style="font-size: 3em;">🏆</div>
+                <h3>Global Leaderboard</h3>
+                <p>Earn XP, unlock Dota-style ranks, farm gold, and dominate the Guild Hall of Fame.</p>
+            </div>
+        </div>
+
+        <div>
+            <a href="http://localhost:8501" class="play-btn">🔥 ENTER THE REALM (DEMO)</a>
+        </div>
+
+        <footer>
+            <p>Created for the Hackathon. Powered by Streamlit & OpenRouter.</p>
+        </footer>
+    </div>
+</body>
+</html>
