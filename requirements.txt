@@ -1,0 +1,7 @@
+streamlit
+pandas
+plotly
+fpdf
+streamlit-ace
+openai
+Pillow
